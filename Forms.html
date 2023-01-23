@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <div>
+        <label for="First Name">First Name:*</label>
+        <input type="text" name="First Name" id="First Name">
+        <br>
+        <label for="Last Name">Last Name:*</label>
+        <input type="text" name="Last Name" id="Last Name">
+    </div>
+    <div>
+        <label for="Email Address">Email Address*</label>
+        <input type="email" name="Email Address" id="Email Address">
+    </div>
+    <div>
+        <label for="Password">Password*</label>
+        <input type="password" name="Password" id="Password">
+        <br>
+        <label for="Confirm Password">Confirm Password*</label>
+        <input type="password" name="Confirm Password" id="Confirm Password">
+    </div>
+    <div>
+        <label for="dob">Birthday</label>
+        <input type="date" name="dob" id="birthday">
+    </div>
+    <div>
+        <p>
+        <h5>Gender Identity:</h5>
+        </p>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+        <label for="non-binary">Non-binary</label>
+        <input type="radio" name="gender" id="Non-binary">
+        <label for="no answer">I prefer not to answer</label>
+        <input type="radio" name="gender" id="no answer">
+    </div>
+    <div>
+        <p>
+        <h5>A short description about myself:</h5>
+        </p>
+        <textarea name="description" id="short description" cols="30" rows="5"></textarea>
+    </div>
+    <div>
+        <h5>Favorite Language:</h5><select name="language">
+            <option value="Javascript">Javascript</option>
+            <option value="C++">C++</option>
+            <option value="C#">C#</option>
+
+        </select>
+
+    </div>
+    <div>
+        <input type="checkbox" name="email updated" id="email updates">
+        <label for="email updates">Yes, I would like to receive periodic email updates</label>
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="Create Account">
+        <h6>* Indicates a required field</h6>
+    </div>
+</body>
+
+</html>
