@@ -11,48 +11,49 @@
 <body>
     <h1>Registration Form</h1>
     <div>
-        <label for="First Name">First Name:*</label>
-        <input type="text" name="First Name" id="First Name">
+        <label for="firstName">First Name:*</label>
+        <input type="text" name="name1" id="firstName">
         <br>
-        <label for="Last Name">Last Name:*</label>
-        <input type="text" name="Last Name" id="Last Name">
+        <label for="lastName">Last Name:*</label>
+        <input type="text" name="name2" id="lastName">
     </div>
     <div>
-        <label for="Email Address">Email Address*</label>
-        <input type="email" name="Email Address" id="Email Address">
+        <label for="email">Email Address*</label>
+        <input type="email" name="emailaddress" id="email">
     </div>
     <div>
-        <label for="Password">Password*</label>
-        <input type="password" name="Password" id="Password">
+        <label for="password">Password*</label>
+        <input type="password" name="password" id="password">
         <br>
-        <label for="Confirm Password">Confirm Password*</label>
-        <input type="password" name="Confirm Password" id="Confirm Password">
+        <label for="confirmPassword">Confirm Password*</label>
+        <input type="password" name="repeatPassword" id="confirmPassword">
     </div>
     <div>
         <label for="dob">Birthday</label>
-        <input type="date" name="dob" id="birthday">
+        <input type="date" name="birthday" id="dob">
     </div>
     <div>
-        <p>
         <h5>Gender Identity:</h5>
-        </p>
         <label for="male">Male</label>
         <input type="radio" name="gender" id="male">
         <label for="female">Female</label>
         <input type="radio" name="gender" id="female">
-        <label for="non-binary">Non-binary</label>
-        <input type="radio" name="gender" id="Non-binary">
-        <label for="no answer">I prefer not to answer</label>
-        <input type="radio" name="gender" id="no answer">
+        <label for="nonBinary">Non-binary</label>
+        <input type="radio" name="gender" id="nonBinary">
+        <label for="noAnswer">I prefer not to answer</label>
+        <input type="radio" name="gender" id="noAnswer">
+    </div>
+    <br>
+    <div>
+        <label for="shortdescription">A short description about myself:</label>
     </div>
     <div>
-        <p>
-        <h5>A short description about myself:</h5>
-        </p>
-        <textarea name="description" id="short description" cols="30" rows="5"></textarea>
+        <textarea name="description" id="shortdescription" cols="30" rows="5" placeholder="Type Here!"></textarea>
     </div>
+    <br>
     <div>
-        <h5>Favorite Language:</h5><select name="language">
+        <label for="language">Favorite Language:</label>
+        <select name="languageChoice" id="language">
             <option value="Javascript">Javascript</option>
             <option value="C++">C++</option>
             <option value="C#">C#</option>
@@ -60,9 +61,10 @@
         </select>
 
     </div>
+    <br>
     <div>
-        <input type="checkbox" name="email updated" id="email updates">
-        <label for="email updates">Yes, I would like to receive periodic email updates</label>
+        <input type="checkbox" name="emailUpdates" id="newsletter">
+        <label for="newsletter">Yes, I would like to receive periodic email updates</label>
     </div>
     <br>
     <div>
