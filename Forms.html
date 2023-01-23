@@ -10,67 +10,69 @@
 
 <body>
     <h1>Registration Form</h1>
-    <div>
-        <label for="firstName">First Name:*</label>
-        <input type="text" name="name1" id="firstName">
-        <br>
-        <label for="lastName">Last Name:*</label>
-        <input type="text" name="name2" id="lastName">
-    </div>
-    <div>
-        <label for="email">Email Address*</label>
-        <input type="email" name="emailaddress" id="email">
-    </div>
-    <div>
-        <label for="password">Password*</label>
-        <input type="password" name="password" id="password">
-        <br>
-        <label for="confirmPassword">Confirm Password*</label>
-        <input type="password" name="repeatPassword" id="confirmPassword">
-    </div>
-    <div>
-        <label for="dob">Birthday</label>
-        <input type="date" name="birthday" id="dob">
-    </div>
-    <div>
-        <h5>Gender Identity:</h5>
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="male">
-        <label for="female">Female</label>
-        <input type="radio" name="gender" id="female">
-        <label for="nonBinary">Non-binary</label>
-        <input type="radio" name="gender" id="nonBinary">
-        <label for="noAnswer">I prefer not to answer</label>
-        <input type="radio" name="gender" id="noAnswer">
-    </div>
-    <br>
-    <div>
-        <label for="shortdescription">A short description about myself:</label>
-    </div>
-    <div>
-        <textarea name="description" id="shortdescription" cols="30" rows="5" placeholder="Type Here!"></textarea>
-    </div>
-    <br>
-    <div>
-        <label for="language">Favorite Language:</label>
-        <select name="languageChoice" id="language">
-            <option value="Javascript">Javascript</option>
-            <option value="C++">C++</option>
-            <option value="C#">C#</option>
+    <form action="./registration.js" method="post">
+        <div>
+            <label for="firstName">First Name:*</label>
+            <input type="text" name="name1" id="firstName">
+            <br>
+            <label for="lastName">Last Name:*</label>
+            <input type="text" name="name2" id="lastName">
+        </div>
+        <div>
+            <label for="email">Email Address*</label>
+            <input type="email" name="emailaddress" id="email">
+        </div>
+        <div>
+            <label for="password">Password*</label>
+            <input type="password" name="password" id="password">
+            <br>
+            <label for="confirmPassword">Confirm Password*</label>
+            <input type="password" name="repeatPassword" id="confirmPassword">
+        </div>
+        <div>
+            <label for="dob">Birthday</label>
+            <input type="date" name="birthday" id="dob">
+        </div>
+        <div>
+            <h4>Gender Identity:</h4>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="nonBinary">Non-binary</label>
+            <input type="radio" name="gender" id="nonBinary" value="non-binary">
+            <label for="noAnswer">I prefer not to answer</label>
+            <input type="radio" name="gender" id="noAnswer" value="no answer">
 
-        </select>
+        </div>
+        <br>
+        <div>
+            <label for="shortdescription">A short description about myself:</label>
+        </div>
+        <div>
+            <textarea name="description" id="shortdescription" cols="30" rows="5" placeholder="Type Here!"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="language">Favorite Language:</label>
+            <select name="languageChoice" id="language">
+                <option value="Javascript">Javascript</option>
+                <option value="C++">C++</option>
+                <option value="C#">C#</option>
+            </select>
 
-    </div>
-    <br>
-    <div>
-        <input type="checkbox" name="emailUpdates" id="newsletter">
-        <label for="newsletter">Yes, I would like to receive periodic email updates</label>
-    </div>
-    <br>
-    <div>
-        <input type="submit" value="Create Account">
-        <h6>* Indicates a required field</h6>
-    </div>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="emailUpdates" id="newsletter">
+            <label for="newsletter">Yes, I would like to receive periodic email updates</label>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Create Account">
+            <h6>* Indicates a required field</h6>
+        </div>
+    </form>
 </body>
 
 </html>
